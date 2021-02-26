@@ -40,7 +40,8 @@ int main()
 	printf("%d\n",ans);
 }
 ```
-## 第四個 找倍數 
+## 第四個 找倍數
+```C
 #include <stdio.h>
 int main()
 {
@@ -51,3 +52,4 @@ int main()
 	else if(n<80&&n>=60) printf("C\n");
 	else printf("F\n");
 }
+```
