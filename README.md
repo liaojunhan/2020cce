@@ -58,22 +58,12 @@ int main()
 #include <stdio.h>
 int main()
 {
-	int m,n,i,a=0,b=0;
-	scanf("%d%d",&m,&n);
-	for(int i=1;i<m;i++){
-		for(int i=1;i<n;i++){
-			if(m%i==0&&n%i==0){
-			m/=i;
-			n/=i;
-			}
-		}
-		
+	int a,b,i,ans=1;
+	scanf("%d %d",&a,&b);
+	for(int i=1;i<=b;i++)
+	{
+		if(a%i==0 && b%i==0) ans=i;
 	}
-	if(m%n==0){
-		a=m/n;
-		b=n/n;
-	printf("%d %d\n",a,b);
-	}
-	else printf("%d %d\n",m,n);
+	printf("%d %d\n",a/ans,b/ans);
 }
 ```
