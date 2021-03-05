@@ -1,4 +1,5 @@
 # 2020cce
+![09160074(2)](https://user-images.githubusercontent.com/64124082/110064950-13cbcb00-7da9-11eb-9d81-6783aa098279.png)
 
 ## 第一個 找零錢
 ```C
