@@ -68,8 +68,8 @@ int main()
 }
 ```
 ## 第六個 指標
-###利用 int *p 來改變 n1變數的值
 ```C
+###利用 int *p 來改變 n1變數的值
 #include <stdio.h>
 int main()
 {
