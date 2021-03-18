@@ -3,6 +3,7 @@
 int a[10];
 int main()
 {
+    ##malloc(), 它是什麼呢?
     int b[10];
     int *p=(int*) malloc(sizeof(int)*10);
     for(int i=0;i<=11;i++)
