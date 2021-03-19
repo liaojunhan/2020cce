@@ -4,7 +4,7 @@ struct POINT{
 };
 int main()
 {
-    ##struct POINT a={4.1, 3.2}; 並利用 a.x 及 a.y 印出來。
+    ## struct POINT a={4.1, 3.2}; 並利用 a.x 及 a.y 印出來。
     struct POINT a={4.1,3.2};
     printf("%f %f\n",a.x,a.y);
     //利用 a.x 及 a.y 來改變裡面的值
@@ -14,7 +14,7 @@ int main()
     return 0;
 }
 
-##外面的global全域變數 會初始值, 裡面的 local區域變數會是亂碼。 然後我們把 local變數裡面用程式來塞值。
+## 外面的global全域變數 會初始值, 裡面的 local區域變數會是亂碼。 然後我們把 local變數裡面用程式來塞值。
     #include<stdio.h>
     struct DATA{
     int x,y;
@@ -33,7 +33,7 @@ int main()
     printf("c: %d %d\n",c.x,c.y);
     }
 
-    ##使用 p->x, p->y, p->z 取用到指標指到的值
+    ## 使用 p->x, p->y, p->z 取用到指標指到的值
     #include <stdio.h>
     struct POINT{
     float x,y,z;
