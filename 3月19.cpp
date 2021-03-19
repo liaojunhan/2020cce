@@ -14,7 +14,7 @@ int main()
     return 0;
 }
 
-###外面的global全域變數 會初始值, 裡面的 local區域變數會是亂碼。 然後我們把 local變數裡面用程式來塞值。
+##外面的global全域變數 會初始值, 裡面的 local區域變數會是亂碼。 然後我們把 local變數裡面用程式來塞值。
     #include<stdio.h>
     struct DATA{
     int x,y;
