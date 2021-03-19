@@ -4,47 +4,47 @@ struct POINT{
 };
 int main()
 {
-    ///struct POINT a={4.1, 3.2}; ¨Ã§Q¥Î a.x ¤Î a.y ¦L¥X¨Ó¡C
+    ##struct POINT a={4.1, 3.2}; ä¸¦åˆ©ç”¨ a.x åŠ a.y å°å‡ºä¾†ã€‚
     struct POINT a={4.1,3.2};
     printf("%f %f\n",a.x,a.y);
-    ///§Q¥Î a.x ¤Î a.y ¨Ó§ïÅÜ¸Ì­±ªº­È
+    //åˆ©ç”¨ a.x åŠ a.y ä¾†æ”¹è®Šè£¡é¢çš„å€¼
     a.x=1;
     a.y=2;
     printf("%f %f\n",a.x,a.y);
     return 0;
 }
 
-///¥~­±ªºglobal¥ş°ìÅÜ¼Æ ·|ªì©l­È, ¸Ì­±ªº local°Ï°ìÅÜ¼Æ·|¬O¶Ã½X¡C µM«á§Ú­Ì§â localÅÜ¼Æ¸Ì­±¥Îµ{¦¡¨Ó¶ë­È¡C
-#include<stdio.h>
-struct DATA{
-int x,y;
-}a[3];
-struct DATA b={100,200};
-int main()
-{
+###å¤–é¢çš„globalå…¨åŸŸè®Šæ•¸ æœƒåˆå§‹å€¼, è£¡é¢çš„ localå€åŸŸè®Šæ•¸æœƒæ˜¯äº‚ç¢¼ã€‚ ç„¶å¾Œæˆ‘å€‘æŠŠ localè®Šæ•¸è£¡é¢ç”¨ç¨‹å¼ä¾†å¡å€¼ã€‚
+    #include<stdio.h>
+    struct DATA{
+    int x,y;
+    }a[3];
+    struct DATA b={100,200};
+    int main()
+    {
     for(int i=0;i<3;i++)
-{
+    {
     printf("a[%d]: %d %d\n",i,a[i].x,a[i].y);
-}
+    }
     printf("b: %d %d\n",b.x,b.y);
     struct DATA c;
     printf("c: %d %d\n",c.x,c.y);
     c=b;
     printf("c: %d %d\n",c.x,c.y);
-}
+    }
 
-///¨Ï¥Î p->x, p->y, p->z ¨ú¥Î¨ì«ü¼Ğ«ü¨ìªº­È
-#include <stdio.h>
-struct POINT{
+    ##ä½¿ç”¨ p->x, p->y, p->z å–ç”¨åˆ°æŒ‡æ¨™æŒ‡åˆ°çš„å€¼
+    #include <stdio.h>
+    struct POINT{
     float x,y,z;
-};
-struct POINT point[5]={(0,0,0),(1,0,0),(0,1,0),(0,0,1),(1,1,1)} ;
-int main()
-{
+    };
+    struct POINT point[5]={(0,0,0),(1,0,0),(0,1,0),(0,0,1),(1,1,1)} ;
+    int main()
+    {
     struct POINT *p=&point[0];
     printf("%.2f %.2f %.2f\n",p->x,p->y,p->z);
     p++;
     printf("%.2f %.2f %.2f\n",p->x,p->y,p->z);
     p++;
     printf("%.2f %.2f %.2f\n",p->x,p->y,p->z);
-}
+    }   
