@@ -1,4 +1,4 @@
-/*#include <stdio.h>
+#include <stdio.h>
 #include <string.h>
 int main()
 {
@@ -11,8 +11,7 @@ int main()
     char line4[]={'m','a','j','o','r','i','t','y'};
     printf("==%s==\n",line4);
 }
-*/
-/*
+
 #include <stdio.h>
 int main()
 {
@@ -20,15 +19,13 @@ int main()
     for(int i=0;i<5;i++)
         printf("%s\n",line[i]);
 }
-*/
-/*
+
 #include <stdio.h>
 int main()
 {
     printf("%d",'\0');
 }
-*/
-/*
+
 #include <stdio.h>
 #include <string.h>
 int main()
@@ -36,11 +33,11 @@ int main()
     char line [10]="majority";
     char line2 [10]="ask";
     if(strcmp(line,line2)>0)
-        printf("¥ªÃä¤j\n");
+        printf("Â¥ÂªÃƒÃ¤Â¤j\n");
     else
-        printf("¥kÃä¤j\n");
+        printf("Â¥kÃƒÃ¤Â¤j\n");
 }
-*/
+
 #include <stdio.h>
 #include <string.h>
 char a[100][10];
